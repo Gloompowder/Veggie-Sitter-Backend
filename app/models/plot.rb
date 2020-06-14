@@ -1,2 +1,4 @@
-class Api::V1::Plot < ApplicationRecord
+class Plot < ApplicationRecord
+    belongs_to :plant
+    belongs_to :garden
 end

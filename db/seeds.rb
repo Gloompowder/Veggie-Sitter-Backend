@@ -21,8 +21,8 @@ puts "Destroying Plots"
 user1=User.create(name: "Eliot", username: 'e.henson', password:'123')
 user2=User.create(name: "William", username: 'w.lin', password:'123')
 
-garden1=Garden.create(name: "Leafy Beefy", price: 95.0, image:"https://tse1.mm.bing.net/th?id=OIP.92K4d7DIJJwet_mOIRSrUAHaFj&pid=Api", sellprice: 47.5, user_id: nil)
-garden2=Garden.create(name: "Bowling Green", price: 85.0, image:"https://tse1.mm.bing.net/th?id=OIP.92K4d7DIJJwet_mOIRSrUAHaFj&pid=Api", sellprice: 42.5, user_id: nil)
+garden1=Garden.create(name: "Leafy Beefy", price: 95.0, image:"https://tse1.mm.bing.net/th?id=OIP.92K4d7DIJJwet_mOIRSrUAHaFj&pid=Api", sellprice: 47.5, user_id: 1)
+garden2=Garden.create(name: "Bowling Green", price: 85.0, image:"https://tse1.mm.bing.net/th?id=OIP.92K4d7DIJJwet_mOIRSrUAHaFj&pid=Api", sellprice: 42.5, user_id: 2)
 
 plant1=Plant.create(name: "Daffodil", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
 plant2=Plant.create(name: "Lily", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
@@ -33,12 +33,12 @@ plant6=Plant.create(name: "Poppy", image: "seed", image2: "sprout", image3: "flo
 plant7=Plant.create(name: "Thistle", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
 plant8=Plant.create(name: "Jasmine", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
 
-plot1=Plot.create(plant_id: nil, garden_id: 1, watered?: false, age: 0)
-plot2=Plot.create(plant_id: nil, garden_id: 1, watered?: false, age: 0)
-plot3=Plot.create(plant_id: nil, garden_id: 1, watered?: false, age: 0)
-plot4=Plot.create(plant_id: nil, garden_id: 1, watered?: false, age: 0)
-plot5=Plot.create(plant_id: nil, garden_id: 1, watered?: false, age: 0)
-plot6=Plot.create(plant_id: nil, garden_id: 1, watered?: false, age: 0)
+plot1=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
+plot2=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
+plot3=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
+plot4=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
+plot5=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
+plot6=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
 
 
 # t.integer :plant_id

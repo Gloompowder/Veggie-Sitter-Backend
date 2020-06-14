@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2020_06_12_213357) do
   create_table "plots", force: :cascade do |t|
     t.integer "plant_id"
     t.integer "garden_id"
-    t.boolean "watered?"
+    t.boolean "watered"
     t.integer "age"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
