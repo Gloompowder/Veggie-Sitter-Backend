@@ -21,8 +21,8 @@ puts "Destroying Plots"
 user1=User.create(name: "Eliot", username: 'e.henson', password:'123')
 user2=User.create(name: "William", username: 'w.lin', password:'123')
 
-garden1=Garden.create(name: "Leafy Beefy", price: 95.0, image:"https://tse1.mm.bing.net/th?id=OIP.92K4d7DIJJwet_mOIRSrUAHaFj&pid=Api", sellprice: 47.5, user_id: 1)
-garden2=Garden.create(name: "Bowling Green", price: 85.0, image:"https://tse1.mm.bing.net/th?id=OIP.92K4d7DIJJwet_mOIRSrUAHaFj&pid=Api", sellprice: 42.5, user_id: 2)
+garden1=Garden.create(name: "Leafy Beefy", price: 95.0, image:"https://tse1.mm.bing.net/th?id=OIP.92K4d7DIJJwet_mOIRSrUAHaFj&pid=Api", sellprice: 47.5, user_id: user1.id)
+garden2=Garden.create(name: "Bowling Green", price: 85.0, image:"https://tse1.mm.bing.net/th?id=OIP.92K4d7DIJJwet_mOIRSrUAHaFj&pid=Api", sellprice: 42.5, user_id: user2.id)
 
 plant1=Plant.create(name: "Daffodil", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
 plant2=Plant.create(name: "Lily", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
