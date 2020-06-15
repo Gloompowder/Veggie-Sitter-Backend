@@ -1,0 +1,2 @@
+class GardenTemplate < ApplicationRecord
+end

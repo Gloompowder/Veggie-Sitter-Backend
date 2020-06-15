@@ -6,7 +6,7 @@ class CreateGardens < ActiveRecord::Migration[6.0]
       t.string :image
       t.float :sellprice
       t.string :user_id
-
+      t.string :category
       t.timestamps
     end
   end

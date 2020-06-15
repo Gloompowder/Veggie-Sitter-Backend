@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_12_213357) do
+ActiveRecord::Schema.define(version: 2020_06_15_210355) do
+
+  create_table "garden_templates", force: :cascade do |t|
+    t.string "category"
+    t.float "price"
+    t.float "sellprice"
+    t.string "image"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "gardens", force: :cascade do |t|
     t.string "name"
@@ -18,6 +27,7 @@ ActiveRecord::Schema.define(version: 2020_06_12_213357) do
     t.string "image"
     t.float "sellprice"
     t.string "user_id"
+    t.string "category"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -29,6 +39,7 @@ ActiveRecord::Schema.define(version: 2020_06_12_213357) do
     t.string "image3"
     t.float "price"
     t.float "sellprice"
+    t.string "category"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

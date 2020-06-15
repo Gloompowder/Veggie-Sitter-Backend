@@ -18,20 +18,28 @@ puts "Destroying Plants"
 Plot.destroy_all 
 puts "Destroying Plots"
 
+GardenTemplate.destroy_all
+puts "Destroying all Garden Templates"
+
+
 user1=User.create(name: "Eliot", username: 'e.henson', password:'123')
 user2=User.create(name: "William", username: 'w.lin', password:'123')
 
-garden1=Garden.create(name: "Leafy Beefy", price: 95.0, image:"https://tse1.mm.bing.net/th?id=OIP.92K4d7DIJJwet_mOIRSrUAHaFj&pid=Api", sellprice: 47.5, user_id: user1.id)
-garden2=Garden.create(name: "Bowling Green", price: 85.0, image:"https://tse1.mm.bing.net/th?id=OIP.92K4d7DIJJwet_mOIRSrUAHaFj&pid=Api", sellprice: 42.5, user_id: user2.id)
+garden1=Garden.create(name: "Leafy Beefy", price: 95.0, image:"https://tse1.mm.bing.net/th?id=OIP.92K4d7DIJJwet_mOIRSrUAHaFj&pid=Api", sellprice: 47.5, user_id: user1.id, category: "flower garden")
+garden2=Garden.create(name: "Bowling Green", price: 85.0, image:"https://tse1.mm.bing.net/th?id=OIP.92K4d7DIJJwet_mOIRSrUAHaFj&pid=Api", sellprice: 42.5, user_id: user2.id, category: "food garden")
 
-plant1=Plant.create(name: "Daffodil", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
-plant2=Plant.create(name: "Lily", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
-plant3=Plant.create(name: "Lilypad", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
-plant4=Plant.create(name: "Primrose", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
-plant5=Plant.create(name: "Orchid", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
-plant6=Plant.create(name: "Poppy", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
-plant7=Plant.create(name: "Thistle", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
-plant8=Plant.create(name: "Jasmine", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
+gardentemp1=GardenTemplate.create(price: 95.0, image:"https://tse1.mm.bing.net/th?id=OIP.92K4d7DIJJwet_mOIRSrUAHaFj&pid=Api", sellprice: 47.5, category: "flower garden")
+gardentemp2=GardenTemplate.create(price: 85.0, image:"https://tse1.mm.bing.net/th?id=OIP.92K4d7DIJJwet_mOIRSrUAHaFj&pid=Api", sellprice: 42.5, category: "food garden")
+gardentemp3=GardenTemplate.create(price: 94.0, image:"https://tse1.mm.bing.net/th?id=OIP.92K4d7DIJJwet_mOIRSrUAHaFj&pid=Api", sellprice: 47.0, category: "raw material garden")
+
+plant1=Plant.create(name: "Daffodil", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5, category: "flower")
+plant2=Plant.create(name: "Lily", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5, category: "flower")
+plant3=Plant.create(name: "Lilypad", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5, category: "flower")
+plant4=Plant.create(name: "Primrose", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5, category: "flower")
+plant5=Plant.create(name: "Orchid", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5, category: "flower")
+plant6=Plant.create(name: "Poppy", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5, category: "flower")
+plant7=Plant.create(name: "Thistle", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5, category: "flower")
+plant8=Plant.create(name: "Jasmine", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5, category: "flower")
 
 # plot1=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
 # plot2=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
