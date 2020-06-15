@@ -1,6 +1,6 @@
-class CreateGardenTemplates < ActiveRecord::Migration[6.0]
+class CreateGardentemplates < ActiveRecord::Migration[6.0]
   def change
-    create_table :garden_templates do |t|
+    create_table :gardentemplates do |t|
       t.string :category
       t.float :price
       t.float :sellprice

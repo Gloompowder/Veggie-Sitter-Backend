@@ -1,2 +1,0 @@
-class GardenTemplate < ApplicationRecord
-end
