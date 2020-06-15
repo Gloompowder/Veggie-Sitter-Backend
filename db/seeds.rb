@@ -33,12 +33,12 @@ plant6=Plant.create(name: "Poppy", image: "seed", image2: "sprout", image3: "flo
 plant7=Plant.create(name: "Thistle", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
 plant8=Plant.create(name: "Jasmine", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5)
 
-plot1=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
-plot2=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
-plot3=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
-plot4=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
-plot5=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
-plot6=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
+# plot1=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
+# plot2=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
+# plot3=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
+# plot4=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
+# plot5=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
+# plot6=Plot.create(plant_id: nil, garden_id: 1, watered: false, age: 0)
 
 
 # t.integer :plant_id
