@@ -21,7 +21,7 @@ class Api::V1::GardensController < ApplicationController
 
     private 
     def garden_params 
-        params.require(:garden).permit(:price, :sellprice, :user_id, :name)
+        params.require(:garden).permit(:price, :sellprice, :user_id, :name, :category, :image)
     end
 end
 
