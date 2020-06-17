@@ -46,6 +46,15 @@ plant6=Plant.create(name: "Poppy", image: "seed", image2: "sprout", image3: "flo
 plant7=Plant.create(name: "Thistle", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5, category: "Flower")
 plant8=Plant.create(name: "Jasmine", image: "seed", image2: "sprout", image3: "flower", price: 1.0, sellprice: 1.5, category: "Flower")
 
+planttemplate1=Planttemplate.create(name: "Daffodil", image: "seed", price: 1.0, sellprice: 1.5, category: "Flower")
+planttemplate2=Planttemplate.create(name: "Lily", image: "seed",  price: 1.0, sellprice: 1.5, category: "Flower")
+planttempalte3=Planttemplate.create(name: "Lilypad", image: "seed",  price: 1.0, sellprice: 1.5, category: "Flower")
+planttemplate4=Planttemplate.create(name: "Primrose", image: "seed",  price: 1.0, sellprice: 1.5, category: "Flower")
+planttemplate5=Planttemplate.create(name: "Orchid", image: "seed",  price: 1.0, sellprice: 1.5, category: "Flower")
+planttemplate6=Planttemplate.create(name: "Poppy", image: "seed",  price: 1.0, sellprice: 1.5, category: "Flower")
+planttemplate7=Planttemplate.create(name: "Thistle", image: "seed",  price: 1.0, sellprice: 1.5, category: "Flower")
+planttemplate8=Planttemplate.create(name: "Jasmine", image: "seed",  price: 1.0, sellprice: 1.5, category: "Flower")
+
 receipt1=Receipt.create(plant_id: plant3.id, user_id: user1.id)
 receipt2=Receipt.create(plant_id: plant2.id, user_id: user1.id)
 receipt3=Receipt.create(plant_id: plant1.id, user_id: user1.id)
