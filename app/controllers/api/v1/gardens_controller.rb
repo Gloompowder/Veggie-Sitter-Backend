@@ -1,7 +1,7 @@
 class Api::V1::GardensController < ApplicationController
     def index 
         @gardens = Garden.all 
-        render json: @gardens
+        render json: @gardens.map{|garden| {garden: garden, gardenPlants: garden.plants}}
     end 
 
     def show 

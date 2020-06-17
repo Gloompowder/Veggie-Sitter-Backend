@@ -10,6 +10,6 @@ class Api::V1::ReceiptsController < ApplicationController
     end
     private 
     def receipt_params 
-        params.require(:receipt).permit(user_id, plant_id)
+        params.require(:receipt).permit(:user_id, :plant_id)
     end
 end
